@@ -1,6 +1,6 @@
 param location string = resourceGroup().location
 
-resourc storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
   name: 'stcicdlab${uniqueString(resourceGroup().id)}'
   location: location
   sku: {
