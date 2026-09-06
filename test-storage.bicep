@@ -7,4 +7,8 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
     name: 'Standard_GRS'
   }
   kind: 'StorageV2'
+  tags: {
+    Environment: 'Lab'
+    Owner: 'Idris'
+  }
 }
